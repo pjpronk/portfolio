@@ -9,7 +9,7 @@
   </template>
   
   <style lang="scss">
-  html {
+  html { 
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -21,7 +21,7 @@
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       font-size: 14px;
     }
-    @media (max-width: $max-mobile) {
+    @media (max-width: $max-mobile) { 
       font-size: 12px;
     }
   }
