@@ -1,5 +1,1 @@
-<template>
-  <div>
-    <Default />
-  </div>
-</template>
+<template><ContentDisplay content-item="home" /></template>
