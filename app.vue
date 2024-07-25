@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="layout">
     <TheNav />
-    <NuxtPage />
+    <NuxtPage class="content" />
   </div>
 </template>
 
@@ -23,6 +23,15 @@ html {
 }
 
 body {
-  background: #000;
+  background: $white;
+}
+
+.layout {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
 }
 </style>

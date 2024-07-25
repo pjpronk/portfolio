@@ -2,12 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxtjs/google-fonts", "@nuxt/content"],
-  googleFonts: {
-    families: {
-      "Noto Sans Mono": 400
-    }
-  },
+  modules: ["@nuxt/eslint", "@nuxt/content"],
 
   components: [
     "~/components/",

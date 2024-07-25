@@ -14,4 +14,12 @@
 .font-size-2-0 {
   font-size: 2rem;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <BaseLink link="/works/">
     <div class="work-carousel-item">
-      <BaseImage class="image" :image="image" />
+      <BaseImage v-for="image in images" class="image" :image="image" />
       <BaseTitle3 class="white-background">
         {{ workTitle }}
       </BaseTitle3>
@@ -11,11 +11,17 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ image: string; workTitle: string }>()
+defineProps<{ images: string[]; workTitle: string }>()
 </script>
 
 <style scoped lang="scss">
 .image {
-  max-width: 240px;
+  min-width: 240px;
+  max-width: 600px;
+  object-fit: contain;
+}
+.work-carousel-item {
+  display: flex;
+  flex-direction: column;
 }
 </style>
